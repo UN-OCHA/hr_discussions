@@ -17,7 +17,7 @@ function hr_discussions_og_features_registry() {
   $feature->description = t('Provide a forum to your space (BETA).');
   $feature->components = array(
     'node' => array(
-      'hr_discussions',
+      'hr_discussion',
     ),
   );
   $registry[$feature->id] = $feature;
