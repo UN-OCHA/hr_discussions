@@ -66,7 +66,7 @@ function hr_discussions_field_default_field_instances() {
     'bundle' => 'hr_discussion',
     'default_value' => array(
       0 => array(
-        'value' => 0,
+        'value' => 2,
       ),
     ),
     'deleted' => 0,
@@ -205,7 +205,7 @@ function hr_discussions_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Group content visibility');
-  t('Groups audience');
+  t('Space(s)');
 
   return $field_instances;
 }
