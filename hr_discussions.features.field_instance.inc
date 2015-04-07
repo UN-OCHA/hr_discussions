@@ -10,6 +10,43 @@
 function hr_discussions_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'comment-comment_node_hr_discussion-field_files'
+  $field_instances['comment-comment_node_hr_discussion-field_files'] = array(
+    'bundle' => 'comment_node_hr_discussion',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_table',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'field_files',
+    'label' => 'Attached files',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => 'discussions/files',
+      'file_extensions' => 'txt pdf doc docx xls xlsx zip jpg png gif',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-hr_discussion-body'
   $field_instances['node-hr_discussion-body'] = array(
     'bundle' => 'hr_discussion',
