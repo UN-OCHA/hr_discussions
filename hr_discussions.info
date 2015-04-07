@@ -22,6 +22,7 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_instance][] = node-hr_discussion-body
+features[field_instance][] = node-hr_discussion-field_files
 features[field_instance][] = node-hr_discussion-group_content_access
 features[field_instance][] = node-hr_discussion-og_group_ref
 features[node][] = hr_discussion

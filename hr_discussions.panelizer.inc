@@ -101,6 +101,35 @@ function hr_discussions_panelizer_defaults() {
     $display->content['new-07687081-4213-4883-9d13-6ff6e670f8d1'] = $pane;
     $display->panels['contentmain'][1] = 'new-07687081-4213-4883-9d13-6ff6e670f8d1';
     $pane = new stdClass();
+    $pane->pid = 'new-7ca83ca0-33ed-4be6-9dc4-fa84d32bba96';
+    $pane->panel = 'contentmain';
+    $pane->type = 'entity_field';
+    $pane->subtype = 'node:field_files';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'label' => 'title',
+      'formatter' => 'file_table',
+      'delta_limit' => '0',
+      'delta_offset' => '0',
+      'delta_reversed' => 0,
+      'formatter_settings' => array(),
+      'context' => 'panelizer',
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $pane->uuid = '7ca83ca0-33ed-4be6-9dc4-fa84d32bba96';
+    $display->content['new-7ca83ca0-33ed-4be6-9dc4-fa84d32bba96'] = $pane;
+    $display->panels['contentmain'][2] = 'new-7ca83ca0-33ed-4be6-9dc4-fa84d32bba96';
+    $pane = new stdClass();
     $pane->pid = 'new-3e054766-51bd-4a15-ad33-46dbf03c7ada';
     $pane->panel = 'footer';
     $pane->type = 'node_comments';
