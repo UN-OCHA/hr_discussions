@@ -160,21 +160,7 @@ function hr_discussions_panelizer_defaults() {
     $pane->type = 'node_comment_form';
     $pane->subtype = 'node_comment_form';
     $pane->shown = TRUE;
-    $pane->access = array(
-      'plugins' => array(
-        0 => array(
-          'name' => 'og_perm',
-          'settings' => array(
-            'perm' => 'post comment_node_hr_discussion',
-          ),
-          'context' => array(
-            0 => 'logged-in-user',
-            1 => 'panelizer',
-          ),
-          'not' => FALSE,
-        ),
-      ),
-    );
+    $pane->access = array();
     $pane->configuration = array(
       'anon_links' => 0,
       'context' => 'panelizer',
